@@ -11,12 +11,12 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= f.label :Attach_a_photo_to_look_back_on %>
+  <div class="form-group"><span class="glyphicon glyphicon-camera"></span>
+    <%= f.label :Attach_a_photo %>
     <%= f.file_field :image, class: "form-control" %>
   </div>
 
-  <div class="form-group">
+  <div class="form-group"><span class="glyphicon glyphicon-pencil"></span>
     <%= f.label :Leave_your_comment %><br>
     <%= f.text_field :description, class: "form-control" %>
   </div>

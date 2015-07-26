@@ -20,11 +20,15 @@
         <li><%= link_to "About", about_path %></li>
         <li><%= link_to "History", history_path %></li>
         <% if user_signed_in? %>
-        <li><%= link_to "My Visits", myvisits_path %></li> 
-          <li>
+        <li>
             <%= link_to new_pin_path do %>
             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Pin
             <% end %>
+        <li><%= link_to "My Visits", myvisits_path %></li>
+        <li><%= link_to createguestbook_path do %> 
+        <span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span> Create Guestbook
+        <% end %></li>
+          
           </li>
 
           <li><%= link_to "Account Settings", edit_user_registration_path %> </li>
