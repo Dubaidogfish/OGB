@@ -1,7 +1,7 @@
 <%= form_for @pin, html: { multipart: true } do |f| %>
   <% if @pin.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@pin.errors.count, "error") %> prohibited this pin from being saved:</h2>
+      <h2><%= pluralize(@pin.errors.count, "error") %> prevented you from making history:</h2>
 
       <ul>
       <% @pin.errors.full_messages.each do |message| %>
@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.label :image %>
+    <%= f.label :Attach_a_photo_to_look_back_on %>
     <%= f.file_field :image, class: "form-control" %>
   </div>
 
-
   <div class="form-group">
-    <%= f.label :description %><br>
+    <%= f.label :Leave_your_comment %><br>
     <%= f.text_field :description, class: "form-control" %>
   </div>
+
   <div class="form-group">
-    <%= f.submit class: "btn btn-primary" %>
+    <%= f.submit "I was ere", class: "btn btn-primary" %>
   </div>
 <% end %>
