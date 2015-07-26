@@ -3,8 +3,9 @@ Rails.application.routes.draw do
 
   devise_for :users
   root "pins#index"
-  get "about" => "pages#about"
-  get "history" => "pages#history" # creates about_path
+  get "about" => "pages#about" # creates about_path
+  get "history" => "pages#history" # creates history_path
+  get "myvisits" => "pages#myvisits" # creates myvisits_path
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

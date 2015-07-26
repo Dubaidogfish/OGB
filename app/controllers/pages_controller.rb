@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def history
   end
+
+  def myvisits
+  end	
 end
